@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
+    <script src='cadastro.js'></script>
+</head>
+<body>
+    <div id="login">
+            <form>
+            <h1>Cadastre-se</h1>
+            <label>Nome</label><br>
+            <input type="text" id="nome" autocomplete="off"><br>
+
+            <label>Data de Nascimento</label><br>
+            <input type="date" id="dtnasc" autocomplete="off" ><br>
+            
+            <label>CPF</label><br>
+            <input type="number" id="CPF" autocomplete="off"><br>
+            
+            <label>Email</label><br>   
+            <input type="email" id="email" autocomplete="off"><br>
+
+            <label>Telefone</label><br>
+            <input type="tel" id="telefone" autocomplete="off"><br>
+    
+            <label>CEP</label><br>
+            <input type="number" id="CEP" autocomplete="off"><br>
+
+            <label>Endereço</label><br>
+            <input type="text" id="Endereco" autocomplete="off"><br>
+
+            <label>Número</label><br> 
+            <input type="number" id="Numero" autocomplete="off"><br>
+
+            <label>Complemento</label><br>
+            <input type="text" id="Complemento" autocomplete="off"><br>
+            
+            <label>Bairro</label><br>
+            <input type="text" id="Bairro" autocomplete="off"><br>
+
+            <label>Estado</label><br>
+            <input type="text" id="Estado" autocomplete="off"><br>
+            
+            <label>Ponto de referência</label><br>
+            <input type="text" id="ref" autocomplete="off"><br>
+
+            <label>Senha</label><br>
+            <input type="password" id="Senha" autocomplete="off"><br> 
+
+            <label>Confirmação de senha</label><br>
+            <input type="password" id="confirmsenha" autocomplete="off"><br> 
+
+            <button onclick="verificar()">Continue</button><br>
+            <a href="" id="esqueceu">Esqueceu a senha?</a>
+        </form>
+</body>
+</html>
