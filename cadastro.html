@@ -3,59 +3,36 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Formulário de cadastro</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
     <script src='cadastro.js'></script>
 </head>
 <body>
-    <div id="login">
-            <form>
-            <h1>Cadastre-se</h1>
-            <label>Nome</label><br>
-            <input type="text" id="nome" autocomplete="off"><br>
-
-            <label>Data de Nascimento</label><br>
-            <input type="date" id="dtnasc" autocomplete="off" ><br>
-            
-            <label>CPF</label><br>
-            <input type="number" id="CPF" autocomplete="off"><br>
-            
-            <label>Email</label><br>   
-            <input type="email" id="email" autocomplete="off"><br>
-
-            <label>Telefone</label><br>
-            <input type="tel" id="telefone" autocomplete="off"><br>
-    
-            <label>CEP</label><br>
-            <input type="number" id="CEP" autocomplete="off"><br>
-
-            <label>Endereço</label><br>
-            <input type="text" id="Endereco" autocomplete="off"><br>
-
-            <label>Número</label><br> 
-            <input type="number" id="Numero" autocomplete="off"><br>
-
-            <label>Complemento</label><br>
-            <input type="text" id="Complemento" autocomplete="off"><br>
-            
-            <label>Bairro</label><br>
-            <input type="text" id="Bairro" autocomplete="off"><br>
-
-            <label>Estado</label><br>
-            <input type="text" id="Estado" autocomplete="off"><br>
-            
-            <label>Ponto de referência</label><br>
-            <input type="text" id="ref" autocomplete="off"><br>
-
-            <label>Senha</label><br>
-            <input type="password" id="Senha" autocomplete="off"><br> 
-
-            <label>Confirmação de senha</label><br>
-            <input type="password" id="confirmsenha" autocomplete="off"><br> 
-
-            <button onclick="verificar()">Continue</button><br>
-            <a href="" id="esqueceu">Esqueceu a senha?</a>
-        </form>
+    <div id="login-container">
+        <h1>Cadastro</h1>
+           <form action="">
+            <label for="name">Nome</label>
+            <input type="name" name="name" id="name" placeholder="Digite seu nome" autocomplete="off">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            <label for="rua">Rua</label>
+            <input type="road" name="road" id="road" placeholder="Digite o nome da sua rua">
+            <label for="number">Número</label>
+            <input type="number" name="number" id="number" placeholder="Digite seu número">
+            <label for="district">Bairro</label>
+            <input type="district" name="district" id="district" placeholder="Digite seu bairro">
+            <label for="city">Cidade</label>
+            <input type="city" name="city" id="city" placeholder="Digite sua cidade">
+           </form>
+           <div id="social-container">
+               <a href="#">CADASTRE</a>
+                   <p>Ainda não tem uma conta?</p>
+                   <a href="#">Registrar</a>
+               </div>
+           </div>
+       </div>
 </body>
 </html>
