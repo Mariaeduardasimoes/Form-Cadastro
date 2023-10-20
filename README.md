@@ -2,7 +2,7 @@
 formulário de cadastro atividade avaliativa de web
  
 ///////
-# Projeto de Formulário de Cadastro de Endereço
+# Projeto de Verificação de Cadastro 
 trabalho cadastro de endereço utilizando API da [ViaCEP](http://viacep.com.br/) com linguagem Javascript.
 
 # Indice
@@ -20,18 +20,6 @@ trabalho cadastro de endereço utilizando API da [ViaCEP](http://viacep.com.br/)
 ## 🔧 Funcionalidades
 `FUNCIONALIDADE 1`:
 * As funcionalidades típicas de uma tela de cadastro de endereço incluem a capacidade de preencher e editar os campos de endereço, validar o formato do CEP, fornecer sugestões de endereço com base no CEP digitado, e permitir salvar ou atualizar os dados de endereço.
-
-
-`FUNCIONALIDADE 2`:
-* As sua funcionalidade é mostra que quando o campo CEP não for respondido mostrar um compo escrito que está incorreto.
-
-
-`FUNCIONALIDADE 3`:
-* As sua funcionalidade é mostra que quando o campo CEP não for respondido com o tanto de números certos mostrar um compo escrito que está incorreto.
-
-
-`FUNCIONALIDADE 4`:
-* As sua funcionalidade é mostra que quando o campo CEP for respondido com um endereço não corrrespondente .
 
 ### 🛠️ Tecnologia ultilizadas 
 
