@@ -1,19 +1,46 @@
-//######################
-//Código de validação de formulário de Cadastro
-function verificar() {
-  let CPF = document.getElementById('CEP').value;
-  let Nome = document.getElementById('Nome').value;
-  let Email = document.getElementById('Email').value;
-  let Senha = document.getElementById('Senha').value;
-  let Rua = document.getElementById('Rua').value;
-  let Numero = document.getElementById('Numero').value;
-  let Bairro = document.getElementById('Bairro').value;
-  let Cidade = document.getElementById('Cidade').value;
- 
-  if (!CEP || !Nome || !Email || !Senha || !Rua || !Numero || !Bairro || !Estado || !Cidade  ) {
-    alert("Campo de preenchimento obrigatório");
+'use restrict';//Modo restrito
 
-  }else{
-     alert("Campos preenchidos com sucesso!")
-  }
+//Limpar formulário
+const limparFormulario = (endereco) =>{
+    document.getElementById('rua').value ='';
+    document.getElementById('bairro').value ='';
+    document.getElementById('cidade').value ='';
+    document.getElementById('estado').value ='';
 }
+
+//verifica se o CEP é válido
+const eNumero = (numero) => /^[0-9]+$/.test(numero);
+const cepValido = (cep) => cep.length == 8 && eNumero(cep);
+
+//Preenche campos do formulário
+const preencherFormulario = (endereco) =>{
+    document.getElementById('rua').value = endereco.logradouro;
+    document.getElementById('bairro').value = endereco.bairro;
+    document.getElementById('cidade').value = endereco.localidade;
+    document.getElementById('estado').value =endereco.uf;
+}
+/*
+Função para consumo de API
+ultilizando a função do tipo assincrona
+*/
+const pesquisarcep = async() =>{
+    limparFormulario();
+    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+    
+    if(cepValido(cep.value)){
+        const dados = await fetch(url);
+        const addres = await dados.json(); 
+
+        if(addres.hasOwnProperty('erro')){
+            alert('CEP não encontrado');
+        }else{
+            preencherFormulario(addres);
+        }
+    }else{
+        alert('CEP incorreto')
+    
+    }
+}
+
+//Adiciona um evento DOM, no input CEP 
+document.getElementById('cep').addEventListener('focusout', pesquisarcep);
