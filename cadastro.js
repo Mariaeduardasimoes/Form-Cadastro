@@ -18,6 +18,8 @@ const preencherFormulario = (endereco) =>{
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
     document.getElementById('estado').value =endereco.uf;
+    document.getElementById('cpf').value =endereco.uf;
+    document.getElementById('nome').value =endereco.uf;
 }
 /*
 Função para consumo de API
