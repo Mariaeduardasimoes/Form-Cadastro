@@ -15,9 +15,9 @@ function verificar()
     let Bairro = document.getElementById('adress2').value;
     let Cidade = document.getElementById('city').value;
     let Estado = document.getElementById('state').value;
-    let Confirmeasenha = document.getElementById('senha2').value;
+    let Telefone0 = document.getElementById('telefone').value;
 
-    if (!nome || !fone|| !DatadeNascimento || !CPF || !Email || !Senha || !Endereco || !Numero || !CEP  || !Complemento || !Bairro || !Cidade || !Estado || !Confirmeasenha) {
+    if (!nome || !fone|| !DatadeNascimento || !CPF || !Email || !Senha  || !Telefone || !Endereco || !Numero || !CEP  || !Complemento || !Bairro || !Cidade || !Estado ) {
         alert("Por favor preencher todos os campos corretamente");
     }
     else{
