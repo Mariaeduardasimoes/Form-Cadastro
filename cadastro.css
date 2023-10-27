@@ -1,6 +1,7 @@
 /*geral */
 
 *{
+    
      margin: 0;
      padding: 20 px;
      box-sizing: border-box;
@@ -12,6 +13,45 @@
  body{
      
      background-size: cover;
-     background: -2  ;
+     background: position y -200px; ;
  }
  
+ /*container login*/
+ #login-container{
+     background-color: #fff;
+     width: 400px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 20px 30px;
+     margin-top: 10vh;
+     border-radius: 10px;
+     text-align: center;
+ }
+ 
+ label, input{
+     display: block;
+     width: 100%;
+     text-align: left;
+     
+ }
+ label{
+     font-weight: bold;
+     font-size: .8rem;
+     
+ }
+ input{
+     border-bottom: 2px solid #323232;
+     padding: 10px;
+     font-size: 1rem;
+     margin-bottom: 20px;
+    
+ }
+ input[type="submit"]{
+     text-align: center;
+     border: none;
+     height: 40px;
+     border-radius: 10px;
+     color: #fff;
+     background-color: rgb(255, 61, 61);
+     font-size: 15px;
+ }
