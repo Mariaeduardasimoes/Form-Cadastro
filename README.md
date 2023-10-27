@@ -19,7 +19,13 @@ trabalho cadastro de endereço utilizando API da [ViaCEP](http://viacep.com.br/)
 
 ## 🔧 Funcionalidades
 `FUNCIONALIDADE 1`:
-* As funcionalidades típicas de uma tela de cadastro incluem a capacidade de preencher e editar os campos de endereço, validar o formato do CEP, fornecer sugestões de endereço com base no CEP digitado, e permitir salvar ou atualizar os dados de endereço.
+* Permitir que o usuário coloque suas informações pessoais
+
+`FUNCIONALIDADE 2`:
+* cadastrar os usuários em um sistema específico 
+
+`FUNCIONALIDADE 3`:
+* o preenchimento automático  na tela de cadastros 
 
 ### 🛠️ Tecnologia ultilizadas 
 

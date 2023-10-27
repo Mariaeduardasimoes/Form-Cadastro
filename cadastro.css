@@ -2,7 +2,7 @@
 
 *{
      margin: 0;
-     padding: 0;
+     padding: 20 px;
      box-sizing: border-box;
      font-family: Helvetica;
      color: #323232;
@@ -22,11 +22,7 @@
  a{
      font-size: .8rem;
  }
- 
- a:hover{
-     color: rgb(255, 0, 119);
- }
- 
+
  /*container login*/
  #login-container{
      background-color: #fff;
